@@ -1,0 +1,5 @@
+**/.terraform
+*.tfstate*
+*.lock.hcl
+*.tar.gz
+*.auto.tfvars
