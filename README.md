@@ -1,1 +1,1 @@
-# terraform-module-aws-1-vpc-1-public-subnet-1-private-subnet
+# aws-1-vpc-1-public-subnet-1-private-subnet
