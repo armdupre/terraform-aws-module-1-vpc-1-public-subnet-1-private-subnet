@@ -15,7 +15,7 @@ resource "aws_subnet" "PublicSubnet" {
 	cidr_block = local.PublicSubnetCidrBlock
 	vpc_id = aws_vpc.Vpc.id
 	tags = {
-		Name = "${local.UserLoginTag}_${local.ProjectTag}_INPOST_PUBLIC_SUBNET_${local.RegionTag}"
+		Name = "${local.UserLoginTag}_${local.ProjectTag}_PUBLIC_SUBNET_${local.RegionTag}"
 		Owner = local.UserEmailTag
 		Project = local.ProjectTag
 	}
@@ -26,7 +26,7 @@ resource "aws_subnet" "PrivateSubnet" {
 	cidr_block = local.PrivateSubnetCidrBlock
 	vpc_id = aws_vpc.Vpc.id
 	tags = {
-		Name = "${local.UserLoginTag}_${local.ProjectTag}_INPOST_PRIVATE_SUBNET_${local.RegionTag}"
+		Name = "${local.UserLoginTag}_${local.ProjectTag}_PRIVATE_SUBNET_${local.RegionTag}"
 		Owner = local.UserEmailTag
 		Project = local.ProjectTag
 	}
