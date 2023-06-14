@@ -6,5 +6,5 @@ resource "aws_flow_log" "VpcFlowLog" {
 }
 
 resource "aws_cloudwatch_log_group" "VpcFlowLogGroup" {
-	name = "${local.UserLoginTag}_${local.ProjectTag}_VPC_FLOW_LOG_GROUP_${local.uuid}_${local.RegionTag}"
+	name = local.FlowLogGroupName
 }
