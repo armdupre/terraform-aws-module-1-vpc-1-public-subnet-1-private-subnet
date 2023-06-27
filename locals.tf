@@ -1,5 +1,5 @@
 locals {
-	FlowLogAccessRoleName = "${local.Preamble}-vpc-flow-log-role-${local.Region}"
+	FlowLogAccessRoleName = "${local.Preamble}-flow-log-role-${local.Region}"
 	FlowLogGroupName = "${local.Preamble}-vpc-flow-log-group-${local.Region}"
 	FlowLogTrafficType = var.FlowLogTrafficType
 	InboundIPv4CidrBlock = var.InboundIPv4CidrBlock
