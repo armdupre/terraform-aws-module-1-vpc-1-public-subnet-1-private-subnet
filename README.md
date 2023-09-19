@@ -10,6 +10,6 @@ This module creates a topology with a single virtual private cloud having a sing
 ```tf
 module "Vpc" {
 	source = "armdupre/module-1-vpc-1-public-subnet-1-private-subnet/aws"
-	InboundIPv4CidrBlock = "1.1.1.1/32"
+	InboundIPv4CidrBlocks = [ "1.1.1.1/32" ]
 }
 ```

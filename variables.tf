@@ -3,7 +3,7 @@ variable "FlowLogTrafficType" {
 	type = string
 }
 
-variable "InboundIPv4CidrBlock" {
+variable "InboundIPv4CidrBlocks" {
 	description = "List of IP Addresses /32 or IP CIDR ranges connecting inbound to App"
 	type = list(string)
 }
