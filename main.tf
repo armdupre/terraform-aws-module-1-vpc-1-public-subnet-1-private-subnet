@@ -58,7 +58,7 @@ resource "aws_security_group_rule" "PublicIngress443" {
 	protocol = "tcp"
 	from_port = 443
 	to_port = 443
-	cidr_blocks = [ local.InboundIPv4CidrBlock ]
+	cidr_blocks = local.InboundIPv4CidrBlocks
 }
 
 resource "aws_security_group_rule" "PublicEgress1" {

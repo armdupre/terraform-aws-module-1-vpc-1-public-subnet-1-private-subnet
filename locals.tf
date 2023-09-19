@@ -2,7 +2,7 @@ locals {
 	FlowLogAccessRoleName = "${local.Preamble}-flow-log-role-${local.Region}"
 	FlowLogGroupName = "${local.Preamble}-vpc-flow-log-group-${local.Region}"
 	FlowLogTrafficType = var.FlowLogTrafficType
-	InboundIPv4CidrBlock = var.InboundIPv4CidrBlock
+	InboundIPv4CidrBlocks = var.InboundIPv4CidrBlocks
 	InternetGwName = "${local.Preamble}-internet-gw-${local.Region}"
 	Preamble = "${local.UserLoginTag}-${local.UserProjectTag}-${local.Tag}-${local.Version}"
 	PrivateRouteTableName = "${local.Preamble}-private-route-table-${local.Region}"

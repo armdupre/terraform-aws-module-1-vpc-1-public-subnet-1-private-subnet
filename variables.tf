@@ -4,12 +4,8 @@ variable "FlowLogTrafficType" {
 }
 
 variable "InboundIPv4CidrBlock" {
-	description = "IP Address /32 or IP CIDR range connecting inbound to App"
-	type = string
-	validation {
-		condition = length(var.InboundIPv4CidrBlock) >= 9 && length(var.InboundIPv4CidrBlock) <= 18 && can(regex("(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})", var.InboundIPv4CidrBlock))
-		error_message = "InboundIPv4CidrBlock must be a valid IP CIDR range of the form x.x.x.x/x."
-	}
+	description = "List of IP Addresses /32 or IP CIDR ranges connecting inbound to App"
+	type = list(string)
 }
 
 variable "PrivateSubnetCidrBlock" {
