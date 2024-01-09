@@ -67,7 +67,7 @@ variable "UserProjectTag" {
 }
 
 variable "Version" {
-	default = "demo"
+	default = "9-36"
 	description = "Versioning of the application using the deployment"
 	type = string
 }
